@@ -31,11 +31,12 @@ cd %{_pearname}-%{version}
 
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install *.php			$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install *.php			$RPM_BUILD_ROOT%{php_pear_dir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{php_pear_dir}/%{_class}/*.php
+%dir %{php_pear_dir}/%{_class}
+%{php_pear_dir}/*.php
