@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The HTTP class is a class with static methods for doing miscellaneous
 HTTP-related stuff like date formatting or language negotiation.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa HTTP jest klas± ze statycznymi metodami ró¿nych zwi±zanych z
