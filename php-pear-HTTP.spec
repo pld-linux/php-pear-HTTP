@@ -27,11 +27,9 @@ HTTP rzeczy, jak formatowanie daty czy negocjacja jêzyka.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-cd %{_pearname}-%{version}
-
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install *.php			$RPM_BUILD_ROOT%{php_pear_dir}/
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
