@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTTP
 %define		_pearname	%{_class}
-Summary:	%{_class} - Miscellaneous HTTP utilities
-Summary(pl):	%{_class} - Ró¿ne narzêdzie do HTTP
+Summary:	%{_pearname} - Miscellaneous HTTP utilities
+Summary(pl):	%{_pearname} - Ró¿ne narzêdzie do HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1
 Release:	2
