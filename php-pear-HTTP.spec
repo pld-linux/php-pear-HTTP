@@ -3,8 +3,8 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 
-Summary:	%{_pearname} - Miscellaneous HTTP utilities
-Summary(pl):	%{_pearname} - Ró¿ne narzêdzie do HTTP
+Summary:	%{_pearname} - miscellaneous HTTP utilities
+Summary(pl):	%{_pearname} - ró¿ne narzêdzie do HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.3.4
 Release:	1
