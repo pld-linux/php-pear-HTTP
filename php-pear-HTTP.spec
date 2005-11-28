@@ -6,12 +6,11 @@ Summary:	%{_pearname} - miscellaneous HTTP utilities
 Summary(pl):	%{_pearname} - ró¿ne narzêdzie do HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	62f3ef8c163e2ac11b8ea0163f2a5d3e
-Patch0:		%{name}-php.patch
 URL:		http://pear.php.net/package/HTTP/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.0.6
@@ -36,7 +35,6 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 cd ./%{php_pear_dir}
-%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
