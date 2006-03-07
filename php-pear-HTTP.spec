@@ -12,6 +12,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	62f3ef8c163e2ac11b8ea0163f2a5d3e
 URL:		http://pear.php.net/package/HTTP/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.0.6
 Requires:	php-pcre
