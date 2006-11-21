@@ -6,7 +6,7 @@ Summary:	%{_pearname} - miscellaneous HTTP utilities
 Summary(pl):	%{_pearname} - ró¿ne narzêdzie do HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -15,8 +15,8 @@ URL:		http://pear.php.net/package/HTTP/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
+Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
-Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 BuildArch:	noarch
