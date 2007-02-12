@@ -3,7 +3,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - miscellaneous HTTP utilities
-Summary(pl):	%{_pearname} - ró¿ne narzêdzie do HTTP
+Summary(pl.UTF-8):   %{_pearname} - rÃ³Å¼ne narzÄ™dzie do HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.0
 Release:	3
@@ -28,9 +28,9 @@ HTTP-related stuff like date formatting or language negotiation.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa HTTP jest klas± ze statycznymi metodami ró¿nych zwi±zanych z
-HTTP rzeczy, jak formatowanie daty czy negocjacja jêzyka.
+%description -l pl.UTF-8
+Klasa HTTP jest klasÄ… ze statycznymi metodami rÃ³Å¼nych zwiÄ…zanych z
+HTTP rzeczy, jak formatowanie daty czy negocjacja jÄ™zyka.
 
 Ta klasa ma w PEAR status: %{_status}.
 
