@@ -5,12 +5,12 @@
 Summary:	%{_pearname} - miscellaneous HTTP utilities
 Summary(pl.UTF-8):	%{_pearname} - różne narzędzie do HTTP
 Name:		php-pear-%{_pearname}
-Version:	1.4.0
-Release:	5
+Version:	1.4.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	62f3ef8c163e2ac11b8ea0163f2a5d3e
+# Source0-md5:	6fe726d7304f81ac1fe866b7725512fa
 URL:		http://pear.php.net/package/HTTP/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -34,6 +34,20 @@ HTTP rzeczy, jak formatowanie daty czy negocjacja języka.
 
 Ta klasa ma w PEAR status: %{_status}.
 
+%package tests
+Summary:	Tests for PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
+Group:		Development/Languages/PHP
+AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
+AutoProv:	no
+
+%description tests
+Tests for PEAR::%{_pearname}.
+
+%description tests -l pl.UTF-8
+Testy dla PEAR::%{_pearname}.
+
 %prep
 %pear_package_setup
 cd ./%{php_pear_dir}
@@ -51,3 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
+
+%files tests
+%defattr(644,root,root,755)
+%{php_pear_dir}/tests/HTTP
