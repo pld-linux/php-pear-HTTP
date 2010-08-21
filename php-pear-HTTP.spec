@@ -6,17 +6,17 @@ Summary:	%{_pearname} - miscellaneous HTTP utilities
 Summary(pl.UTF-8):	%{_pearname} - różne narzędzie do HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.4.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	6fe726d7304f81ac1fe866b7725512fa
 URL:		http://pear.php.net/package/HTTP/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.7.1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.6
+Requires:	php-pcre
 Requires:	php-pear
 Requires:	php-pear-PEAR-core
 BuildArch:	noarch
@@ -38,9 +38,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
