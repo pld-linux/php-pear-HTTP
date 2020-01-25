@@ -1,7 +1,6 @@
 %define		_class		HTTP
 %define		_status		stable
 %define		_pearname	HTTP
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - miscellaneous HTTP utilities
 Summary(pl.UTF-8):	%{_pearname} - różne narzędzie do HTTP
 Name:		php-pear-%{_pearname}
